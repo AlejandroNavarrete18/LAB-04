@@ -1,13 +1,13 @@
 -- LAB-04 / 03-configuracion.sql
 
 
--- ===== Actividad 7: autenticacion =====
+-- Actividad 7: autenticacion 
 SHOW password_encryption;
 
--- ===== Actividad 10: extensiones =====
+--   Actividad 10: extensiones  
 SELECT extname, extversion FROM pg_extension ORDER BY extname;
 
--- ===== Actividad 11: parametros de conexion =====
+--  Actividad 11: parametros de conexion  
 SHOW max_connections;
 SHOW superuser_reserved_connections;
 SHOW statement_timeout;
@@ -19,7 +19,7 @@ FROM pg_settings
 WHERE name IN ('max_connections', 'superuser_reserved_connections',
                'statement_timeout', 'idle_in_transaction_session_timeout');
 
--- ===== Actividad 15: TLS =====
+--   Actividad 15: TLS  
 SHOW ssl;
 SHOW ssl_min_protocol_version;
 
